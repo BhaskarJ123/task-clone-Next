@@ -15,7 +15,7 @@ const Header = () => {
   },[]);
 
   const handleLogout = () => {
-    localStorage.clear()
+    localStorage.clear();
   }
 
   return (

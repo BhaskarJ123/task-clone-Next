@@ -21,3 +21,43 @@
   font-size: 2.5vh;
   font-weight: 300;
 }
+
+.createTokenContainer .createTokens  button{
+  border-radius: 10px;
+  height: 4vh;
+  width: 8vw;
+  font-size: 1.8vh;
+}
+
+.dropdown .tokenSites li{
+  padding-left: 1vw;
+}
+
+.dropdown .tokenSites li:hover{
+  background-color: rgba(219, 219, 219, 0.582);
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #d2d2fc;
+  border-color: #d2d2fc transparent #d2d2fc transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
