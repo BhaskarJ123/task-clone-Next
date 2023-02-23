@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bhaskarj123/button-github": "^1.0.0",
+    "@bhaskarj123/input-github": "^1.0.0",
     "@next/font": "13.1.6",
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",
