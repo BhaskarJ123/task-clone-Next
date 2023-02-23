@@ -22,7 +22,6 @@ const User = () => {
   },[]);
 
   useEffect(() => {
-    // console.log(userCards.length);
     if(userCards.length > 0){
       setCurrentUserCard(userCards[0]);
     }
