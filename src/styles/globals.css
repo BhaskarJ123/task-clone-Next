@@ -1,3 +1,246 @@
+/* Styling for the Delete token alert dialogue component */
+
+/* reset */
+button {
+  all: unset;
+}
+
+.AlertDialogOverlay {
+  background-color: var(--blackA9);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.AlertDialogContent {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 500px;
+  max-height: 85vh;
+  padding: 25px;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.AlertDialogContent:focus {
+  outline: none;
+}
+
+.AlertDialogTitle {
+  margin: 0;
+  color: var(--mauve12);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.AlertDialogDescription {
+  margin-bottom: 20px;
+  color: var(--mauve11);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.AlertDialogContent .Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 35px;
+}
+.AlertDialogContent .Button.violet {
+  background-color: white;
+  color: var(--violet11);
+  box-shadow: 0 2px 10px var(--blackA7);
+}
+.AlertDialogContent .Button.violet:hover {
+  background-color: var(--mauve3);
+}
+.AlertDialogContent .Button.violet:focus {
+  box-shadow: 0 0 0 2px black;
+}
+.AlertDialogContent .Button.red {
+  background-color: var(--red4);
+  color: var(--red11);
+}
+.AlertDialogContent .Button.red:hover {
+  background-color: var(--red5);
+}
+.AlertDialogContent .Button.red:focus {
+  box-shadow: 0 0 0 2px var(--red7);
+}
+.AlertDialogContent .Button.mauve {
+  background-color: var(--mauve4);
+  color: var(--mauve11);
+}
+.AlertDialogContent .Button.mauve:hover {
+  background-color: var(--mauve5);
+}
+.AlertDialogContent .Button.mauve:focus {
+  box-shadow: 0 0 0 2px var(--mauve7);
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/*  ---  */
+
+/* Styling for the Radix-UI Select Component */
+
+/* reset */
+button {
+  all: unset;
+}
+
+.SelectTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 1;
+  height: 35px;
+  gap: 5px;
+  background-color: white;
+  color: var(--violet11);
+  box-shadow: 0 2px 10px var(--blackA7);
+}
+.SelectTrigger:hover {
+  background-color: var(--mauve3);
+}
+.SelectTrigger:focus {
+  box-shadow: 0 0 0 2px black;
+}
+.SelectTrigger[data-placeholder] {
+  color: var(--violet9);
+}
+
+.SelectIcon {
+  color: Var(--violet11);
+}
+
+.SelectContent {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+}
+
+.SelectViewport {
+  padding: 5px;
+}
+
+.SelectItem {
+  font-size: 13px;
+  line-height: 1;
+  color: var(--violet11);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 35px 0 25px;
+  position: relative;
+  user-select: none;
+}
+.SelectItem[data-disabled] {
+  color: var(--mauve8);
+  pointer-events: none;
+}
+.SelectItem[data-highlighted] {
+  outline: none;
+  background-color: var(--violet9);
+  color: var(--violet1);
+}
+
+.SelectLabel {
+  padding: 0 25px;
+  font-size: 12px;
+  line-height: 25px;
+  color: var(--mauve11);
+}
+
+.SelectSeparator {
+  height: 1px;
+  background-color: var(--violet6);
+  margin: 5px;
+}
+
+.SelectItemIndicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SelectScrollButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: white;
+  color: var(--violet11);
+  cursor: default;
+}
+
+/* --- */
+
+/* Styling for the Radix-UI Avatar Component */
+
+.AvatarRoot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: var(--blackA3);
+}
+
+.AvatarFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--violet11);
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+/* --- */
+
 .headerContainer{
   padding-left: 2vw;
   padding-right: 2vw;

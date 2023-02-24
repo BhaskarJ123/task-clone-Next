@@ -1,16 +1,22 @@
 import Link from "next/link";
 import React from "react";
+import * as Avatar from '@radix-ui/react-avatar';
 import { useState,useEffect } from "react";
 
 const Header = () => {
 
-  const [userName,setUserName] = useState('');
+  const [userInitials,setUserInitials] = useState('');
 
   useEffect(() => {
     const userDataString: string|null = localStorage.getItem("UserData");
     if(userDataString !== null){
       const userData: any[] = JSON.parse(userDataString);
-      setUserName(userData[0].name.substring(0, 1).toUpperCase() + userData[0].name.substring(1));
+      const userNameArray = userData[0].name.split(' ');
+      if(userNameArray.length > 1){
+        setUserInitials(userNameArray[0].substring(0, 1).toUpperCase() + userNameArray[1].substring(0, 1).toUpperCase());
+      } else {
+        setUserInitials(userNameArray[0].substring(0, 1).toUpperCase());
+      }
     } 
   },[]);
 
@@ -22,7 +28,7 @@ const Header = () => {
     <div>
       <ul className="nav headerContainer">
         <li className="nav-item">
-          <Link href="/">
+          <Link href="/dashboard">
             <h1>CARD91</h1>
           </Link>
         </li>
@@ -34,7 +40,9 @@ const Header = () => {
             role="button"
             aria-expanded="false"
           >
-            <span>{userName}</span>
+          <Avatar.Root className="AvatarRoot">
+            <Avatar.Fallback className="AvatarFallback">{userInitials}</Avatar.Fallback>
+          </Avatar.Root>
           </a>
           <ul className="dropdown-menu">
             <li>
