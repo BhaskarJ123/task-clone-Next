@@ -47,9 +47,9 @@ const Header = () => {
           </a>
           <ul className="dropdown-menu">
             <li>
-              <a className="dropdown-item" href="/" onClick={handleLogout}>
+              <Link className="dropdown-item" href="/" onClick={handleLogout}>
                 Logout
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
