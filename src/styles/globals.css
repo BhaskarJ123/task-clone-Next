@@ -1,9 +1,6 @@
 /* Styling for the Delete token alert dialogue component */
 
 /* reset */
-button {
-  all: unset;
-}
 
 .AlertDialogOverlay {
   background-color: rgba(92, 92, 92, 0.521);

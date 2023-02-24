@@ -5,6 +5,7 @@ const DeleteButton = styled.button`
   color: red;
   border-radius: 5px;
   padding: 6px;
+  background-color: rgba(250, 212, 212, 0.521);
 `
 
 export default DeleteButton;
