@@ -1,7 +1,7 @@
 import styles from '@/styles/Tokens.module.css';
 import React from "react";
-import DeleteButton from './styled-components/DeleteButton';
-import CancelButton from './styled-components/CancelButton';
+import DeleteButton from './Styled-Components/DeleteButton';
+import CancelButton from './Styled-Components/CancelButton';
 import * as AlertDialog from '@radix-ui/react-alert-dialog';
 import { useState, useEffect } from "react";
 import {
