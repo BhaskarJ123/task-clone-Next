@@ -133,3 +133,6 @@
     color: white;
 }
 
+.tokensPageContainer .tokenTableContainer button{
+    background-color: #aaaafd;
+}

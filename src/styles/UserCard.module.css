@@ -35,3 +35,8 @@
 .userCard h3{
     font-weight: 300;
 }
+
+.cardTokens{
+    display: flex;
+    justify-content: space-between;
+}
