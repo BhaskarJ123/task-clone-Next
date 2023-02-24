@@ -30,7 +30,6 @@ const Tokens = (props: any) => {
 
   useEffect(() => {
     setAPILoaded(false);
-    console.log("Success",isSuccess);
     if(isFetching){
       setAPILoaded(false);
     } else if(isError){
