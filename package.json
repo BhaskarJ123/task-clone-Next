@@ -11,6 +11,8 @@
   "dependencies": {
     "@bhaskarj123/button-github": "^1.0.0",
     "@bhaskarj123/input-github": "^1.0.0",
+    "@bhaskarj123/styled-cancel-button-github": "^1.0.0",
+    "@bhaskarj123/styled-delete-button-github": "^1.0.0",
     "@next/font": "13.1.6",
     "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-avatar": "^1.0.1",
