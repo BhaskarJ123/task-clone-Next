@@ -1,5 +1,7 @@
 import styles from '@/styles/Tokens.module.css';
 import React from "react";
+import DeleteButton from './styled-components/DeleteButton';
+import CancelButton from './styled-components/CancelButton';
 import * as AlertDialog from '@radix-ui/react-alert-dialog';
 import { useState, useEffect } from "react";
 import {
@@ -8,6 +10,7 @@ import {
   useDeleteTokensMutation,
   useGetTokensQuery
 } from "../redux/services/users";
+
 
 const Tokens = (props: any) => {
   
@@ -176,18 +179,18 @@ const Tokens = (props: any) => {
                                 }}
                               >
                                 <AlertDialog.Cancel asChild>
-                                  <button className="Button mauve">
+                                  <CancelButton>
                                     Cancel
-                                  </button>
+                                  </CancelButton>
                                 </AlertDialog.Cancel>
                                 <AlertDialog.Action asChild>
-                                  <button className="Button red" 
+                                  <DeleteButton
                                     onClick={() => {
                                       handleDeleteToken(token.id);
                                     }}
                                   >
                                     Yes, Delete Token
-                                  </button>
+                                  </DeleteButton>
                                 </AlertDialog.Action>
                               </div>
                             </AlertDialog.Content>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import * as Avatar from '@radix-ui/react-avatar';
 import { useState,useEffect } from "react";
+import styles from '@/styles/Header.module.css';
 
 const Header = () => {
 
@@ -40,8 +41,8 @@ const Header = () => {
             role="button"
             aria-expanded="false"
           >
-          <Avatar.Root className="AvatarRoot">
-            <Avatar.Fallback className="AvatarFallback">{userInitials}</Avatar.Fallback>
+          <Avatar.Root className={styles.AvatarRoot}>
+            <Avatar.Fallback className={styles.AvatarFallback}>{userInitials}</Avatar.Fallback>
           </Avatar.Root>
           </a>
           <ul className="dropdown-menu">
