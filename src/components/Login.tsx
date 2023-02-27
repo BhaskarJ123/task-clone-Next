@@ -19,10 +19,6 @@ const Login = () => {
   const [isUserValid, setUserValid] = useState(true);
   const [createLogin, createLoginResult] = useCreateLoginMutation();
 
-  // if(localStorage.getItem("UserData") !== null){
-  //   window.open('/dashboard',"_self");
-  // }
-
   const validateEmailData = (): void => {
     let emailValidFlag = validator.isEmail(email) ? true : false;
 
@@ -46,6 +42,12 @@ const Login = () => {
       validatePasswordData();
     }
   };
+
+  useEffect(() => {
+    if(localStorage.getItem("UserData") !== null){
+      window.open('/dashboard','_self');
+    }
+  },[]);
 
   useEffect(() => {
     if (isInitialMountEmail.current === 2) {
