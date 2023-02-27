@@ -1,15 +1,11 @@
-import styles from '@/styles/User.module.css';
+import styles from './User.module.css';
 import React from "react";
 import { useState,useEffect } from "react";
-import UserCard from "./UserCard";
-import Tokens from "./Tokens";
+import UserCard from "../UserCard/UserCard";
+import Tokens from "../Tokens/Tokens";
 
 const User = () => {
-
-  // if(localStorage.getItem("UserData") === null){
-  //   window.open('/',"_self");
-  // }
-
+  
   const [userCards,setUserCards] = useState<any[]>([]);
   const [currentUserCard, setCurrentUserCard] = useState<any>({});
 

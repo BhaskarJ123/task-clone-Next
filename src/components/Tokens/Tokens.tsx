@@ -1,4 +1,4 @@
-import styles from '@/styles/Tokens.module.css';
+import styles from './Tokens.module.css';
 import React from "react";
 import CancelButton from '@bhaskarj123/styled-cancel-button-github';
 import DeleteButton from '@bhaskarj123/styled-delete-button-github';
@@ -9,7 +9,7 @@ import {
   useSuspendTokensMutation,
   useDeleteTokensMutation,
   useGetTokensQuery
-} from "../redux/services/users";
+} from "../../redux/services/users";
 
 
 const Tokens = (props: any) => {
