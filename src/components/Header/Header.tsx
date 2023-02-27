@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import * as Avatar from '@radix-ui/react-avatar';
 import { useState,useEffect } from "react";
-import styles from '@/styles/Header.module.css';
+import styles from './Header.module.css';
 
 const Header = () => {
 

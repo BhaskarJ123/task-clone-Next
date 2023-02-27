@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import styles from '@/styles/CreateToken.module.css';
-import { useCreateTokensMutation } from "../redux/services/users";
+import styles from './CreateToken.module.css';
+import { useCreateTokensMutation } from "../../redux/services/users";
 import React from "react";
 
 const CreateToken = (props: {

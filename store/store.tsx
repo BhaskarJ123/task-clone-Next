@@ -1,5 +1,5 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import {usersApi} from './redux/services/users';
+import {usersApi} from '../src/redux/services/users';
 
 export const store = configureStore({
     reducer: {

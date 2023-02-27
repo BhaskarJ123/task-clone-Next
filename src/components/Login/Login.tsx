@@ -3,8 +3,8 @@ import React from "react";
 import validator from "validator";
 import SignupInput from '@bhaskarj123/input-github';
 import SignupButton from "@bhaskarj123/button-github";
-import { useCreateLoginMutation } from "../redux/services/users";
-import styles from '@/styles/Login.module.css';
+import { useCreateLoginMutation } from "../../redux/services/users";
+import styles from './Login.module.css';
 
 const Login = () => {
 
