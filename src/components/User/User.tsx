@@ -1,8 +1,7 @@
-import styles from './User.module.css';
-import React from "react";
 import { useState,useEffect } from "react";
-import UserCard from "../UserCard/UserCard";
-import Tokens from "../Tokens/Tokens";
+import styles from '@/components/User/User.module.css';
+import UserCard from "@/components/UserCard/UserCard";
+import Tokens from "@/components/Tokens/Tokens";
 
 const User = () => {
   

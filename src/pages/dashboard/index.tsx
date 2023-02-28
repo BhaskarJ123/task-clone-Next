@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import User from "@/components/User/User";
 import Head from "next/head";
-import { useEffect } from "react";
 
 const Dashboard = () => {
 

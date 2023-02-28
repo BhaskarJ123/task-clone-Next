@@ -1,8 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import * as Avatar from '@radix-ui/react-avatar';
 import { useState,useEffect } from "react";
-import styles from './Header.module.css';
+import Link from "next/link";
+import * as Avatar from '@radix-ui/react-avatar';
+import styles from '@/components/Header/Header.module.css';
 
 const Header = () => {
 

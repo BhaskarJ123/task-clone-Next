@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import React from "react";
+import { useCreateLoginMutation } from "@/redux/services/users";
 import validator from "validator";
 import SignupInput from '@bhaskarj123/input-github';
 import SignupButton from "@bhaskarj123/button-github";
-import { useCreateLoginMutation } from "../../redux/services/users";
-import styles from './Login.module.css';
+import styles from '@/components/Login/Login.module.css';
 
 const Login = () => {
 

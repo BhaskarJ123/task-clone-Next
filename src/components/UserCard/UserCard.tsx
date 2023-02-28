@@ -1,7 +1,6 @@
-import CreateToken from "../CreateToken/CreateToken";
 import { useState, useEffect } from "react";
-import React from "react";
-import styles from './UserCard.module.css';
+import CreateToken from "@/components/CreateToken/CreateToken";
+import styles from '@/components/UserCard/UserCard.module.css';
 
 const UserCard = (props: any) => {
   const [isCardNoHidden, setIsCardNoHidden] = useState(true);

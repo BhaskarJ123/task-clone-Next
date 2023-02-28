@@ -1,15 +1,14 @@
-import styles from './Tokens.module.css';
-import React from "react";
-import CancelButton from '@bhaskarj123/styled-cancel-button-github';
-import DeleteButton from '@bhaskarj123/styled-delete-button-github';
-import * as AlertDialog from '@radix-ui/react-alert-dialog';
 import { useState, useEffect } from "react";
 import {
   useActivateTokensMutation,
   useSuspendTokensMutation,
   useDeleteTokensMutation,
   useGetTokensQuery
-} from "../../redux/services/users";
+} from "@/redux/services/users";
+import CancelButton from '@bhaskarj123/styled-cancel-button-github';
+import DeleteButton from '@bhaskarj123/styled-delete-button-github';
+import * as AlertDialog from '@radix-ui/react-alert-dialog';
+import styles from '@/components/Tokens/Tokens.module.css';
 
 
 const Tokens = (props: any) => {
